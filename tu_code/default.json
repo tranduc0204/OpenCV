@@ -1,0 +1,17 @@
+{
+  "sigma": 1.0,
+  "gaussian_tail": 0.01,
+  "low_threshold": 30,
+  "high_threshold": 70,
+  "closing_iterations": 1,
+  "min_area": 200,
+  "max_area_fraction": 0.45,
+  "min_hole_fraction": 0.015,
+  "max_hole_fraction": 0.50,
+  "hole_background_tolerance": 0.50,
+  "bolt_min_elongation": 2.2,
+  "round_max_elongation": 1.8,
+  "washer_max_radial_cv": 0.035,
+  "nut_min_hex_score": 0.025,
+  "nut_max_radial_cv": 0.15
+}

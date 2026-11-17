@@ -1,0 +1,148 @@
+{
+  "so_anh": 44,
+  "tham_so_chung": {
+    "sigma": 1.0,
+    "gaussian_tail": 0.01,
+    "low_threshold": 30,
+    "high_threshold": 70,
+    "closing_iterations": 1,
+    "min_area": 200,
+    "max_area_fraction": 0.45,
+    "min_hole_fraction": 0.015,
+    "max_hole_fraction": 0.5,
+    "hole_background_tolerance": 0.5,
+    "bolt_min_elongation": 2.2,
+    "round_max_elongation": 1.8,
+    "washer_max_radial_cv": 0.035,
+    "nut_min_hex_score": 0.025,
+    "nut_max_radial_cv": 0.15
+  },
+  "ghi_chu": [
+    "Hai ban dung chung classifier.py va default.json, cung cac buoc xu ly; ban OpenCV thay moi buoc co ham san bang ham cua OpenCV.",
+    "Nguong Canny cua cv2.Canny quy doi: T / 255 * gradient lon nhat cua anh."
+  ],
+  "nhan_that_tong": {
+    "bolt": 90,
+    "washer": 85,
+    "nut": 87
+  },
+  "phuong_phap": {
+    "tu_code": {
+      "dung_hoan_toan_tat_ca": {
+        "anh": 38,
+        "tong": 44,
+        "phan_tram": 86.36363636363636
+      },
+      "dung_hoan_toan_roi_nhau": {
+        "anh": 38,
+        "tong": 39,
+        "phan_tram": 97.43589743589743
+      },
+      "dung_hoan_toan_chong_cham_nhau": {
+        "anh": 0,
+        "tong": 5,
+        "phan_tram": 0.0
+      },
+      "mae_moi_loai": {
+        "bolt": 0.06818181818181818,
+        "washer": 0.18181818181818182,
+        "nut": 0.3181818181818182
+      },
+      "mae_tong_so": 0.4090909090909091,
+      "tong_dem": {
+        "bolt": 87,
+        "washer": 77,
+        "nut": 73,
+        "unknown": 7
+      },
+      "tuong_quan_pearson_voi_nhan": {
+        "bolt": 0.9807325363181849,
+        "washer": 0.8862911931004989,
+        "nut": 0.7999853885281673
+      },
+      "thoi_gian_trung_binh_giay": 1.1660196568224241,
+      "anh_sai": [
+        "anh12.jpg",
+        "anh40.jpg",
+        "anh41.jpg",
+        "anh42.jpg",
+        "anh43.jpg",
+        "anh44.jpg"
+      ]
+    },
+    "opencv": {
+      "dung_hoan_toan_tat_ca": {
+        "anh": 38,
+        "tong": 44,
+        "phan_tram": 86.36363636363636
+      },
+      "dung_hoan_toan_roi_nhau": {
+        "anh": 38,
+        "tong": 39,
+        "phan_tram": 97.43589743589743
+      },
+      "dung_hoan_toan_chong_cham_nhau": {
+        "anh": 0,
+        "tong": 5,
+        "phan_tram": 0.0
+      },
+      "mae_moi_loai": {
+        "bolt": 0.06818181818181818,
+        "washer": 0.18181818181818182,
+        "nut": 0.3181818181818182
+      },
+      "mae_tong_so": 0.4090909090909091,
+      "tong_dem": {
+        "bolt": 87,
+        "washer": 77,
+        "nut": 73,
+        "unknown": 7
+      },
+      "tuong_quan_pearson_voi_nhan": {
+        "bolt": 0.9807325363181849,
+        "washer": 0.8862911931004989,
+        "nut": 0.7999853885281673
+      },
+      "thoi_gian_trung_binh_giay": 0.02163683636304499,
+      "anh_sai": [
+        "anh12.jpg",
+        "anh40.jpg",
+        "anh41.jpg",
+        "anh42.jpg",
+        "anh43.jpg",
+        "anh44.jpg"
+      ]
+    }
+  },
+  "do_trung_bien": {
+    "ghi_chu": "Cung anh xam (cong thuc ban tu code), cung default.json. A = Canny tu code, B = cv2.Canny. Precision = ty le pixel A co B trong o 3x3; recall = ty le pixel B co A trong o 3x3.",
+    "iou_dung_tung_pixel": {
+      "trung_binh": 0.8845774515277519,
+      "nho_nhat": 0.8426585283146829,
+      "lon_nhat": 0.9382716049382716
+    },
+    "f1_lech1px": {
+      "trung_binh": 0.9893859992025207,
+      "nho_nhat": 0.9666089476115354,
+      "lon_nhat": 0.9990877191669055
+    },
+    "precision_lech1px_trung_binh": 0.9870030402166193,
+    "recall_lech1px_trung_binh": 0.9918367195379425,
+    "thoi_gian_canny_trung_binh_giay": {
+      "tu_code": 0.6853634613587267,
+      "opencv": 0.00624659317757257
+    },
+    "opencv_nhanh_hon_lan": 109.7179601545717,
+    "anh_f1_thap_nhat": {
+      "anh": "anh41.jpg",
+      "bien_tu_code_px": 5475,
+      "bien_opencv_px": 5393,
+      "iou_bien": 0.8426585283146829,
+      "precision_lech1px": 0.9649315068493151,
+      "recall_lech1px": 0.9682922306693862,
+      "f1_lech1px": 0.9666089476115354,
+      "canny_tu_code_s": 0.6004231001716107,
+      "canny_opencv_s": 0.004792199935764074
+    }
+  }
+}
